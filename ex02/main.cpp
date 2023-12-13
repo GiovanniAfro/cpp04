@@ -6,7 +6,7 @@
 /*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 16:16:22 by gcavanna          #+#    #+#             */
-/*   Updated: 2023/12/13 17:23:09 by gcavanna         ###   ########.fr       */
+/*   Updated: 2023/12/13 17:33:39 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@
 //     return 0;
 // }
 
-int main() {
+int main() 
+{
     const Animal* dog = new Dog();
     const Animal* cat = new Cat();
 
