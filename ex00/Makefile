@@ -6,13 +6,13 @@
 #    By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/01 13:50:09 by gcavanna          #+#    #+#              #
-#    Updated: 2023/12/13 14:50:32 by gcavanna         ###   ########.fr        #
+#    Updated: 2023/12/13 16:17:31 by gcavanna         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = ClapTrap
 
-SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
+SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -rf
