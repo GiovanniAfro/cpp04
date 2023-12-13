@@ -1,33 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/13 15:50:48 by gcavanna          #+#    #+#             */
-/*   Updated: 2023/12/13 16:30:05 by gcavanna         ###   ########.fr       */
+/*   Created: 2023/12/13 16:03:41 by gcavanna          #+#    #+#             */
+/*   Updated: 2023/12/13 16:14:23 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WRONGANIMAL_HPP
-# define WRONGANIMAL_HPP
+#ifndef WRONGCAT_HPP
+# define WRONGCAT_HPP
 
-#include <iostream>
-#include <string>
+#include "WrongAnimal.hpp"
 
-class WrongAnimal
+class WrongCat : public WrongAnimal
 {
-    private:
-        std::string _type;
     public:
-        WrongAnimal();
-        WrongAnimal(const WrongAnimal& other);
-        virtual ~WrongAnimal();
+        WrongCat();
+        WrongCat(const WrongCat& other);
+        ~WrongCat();
 
-        WrongAnimal& operator=(const WrongAnimal& other);
+        WrongCat&   operator=(const WrongCat& other);
 
         void makeSound() const;
-};
+};      
 
 #endif

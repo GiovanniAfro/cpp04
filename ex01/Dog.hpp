@@ -1,33 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/13 15:50:48 by gcavanna          #+#    #+#             */
-/*   Updated: 2023/12/13 16:30:05 by gcavanna         ###   ########.fr       */
+/*   Created: 2023/12/13 15:07:08 by gcavanna          #+#    #+#             */
+/*   Updated: 2023/12/13 17:05:12 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WRONGANIMAL_HPP
-# define WRONGANIMAL_HPP
+#ifndef DOG_HPP
+# define DOG_HPP
 
-#include <iostream>
-#include <string>
+#include "Animal.hpp"
+#include "Brain.hpp"
 
-class WrongAnimal
+class Dog : public Animal 
 {
     private:
-        std::string _type;
-    public:
-        WrongAnimal();
-        WrongAnimal(const WrongAnimal& other);
-        virtual ~WrongAnimal();
+        Brain* _brain;
 
-        WrongAnimal& operator=(const WrongAnimal& other);
+    public:
+        Dog();
+        Dog(const Dog& other);
+        ~Dog();
+
+        Dog& operator=(const Dog& other);
 
         void makeSound() const;
+
+        void setIdea(int index, const std::string& idea);
+        std::string getIdea(int index) const;
 };
 
 #endif
