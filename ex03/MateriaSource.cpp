@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MateriaSource.cpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
+/*   By: gcavanna <gcavanna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 17:58:40 by gcavanna          #+#    #+#             */
-/*   Updated: 2023/12/13 22:10:47 by gcavanna         ###   ########.fr       */
+/*   Updated: 2023/12/14 15:00:40 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ MateriaSource::MateriaSource()
 {
     for (int i = 0; i < 4; ++i)
     {
-        source[i] = nullptr;
+        source[i] = NULL;
     }
 }
 
@@ -27,7 +27,7 @@ MateriaSource::MateriaSource(const MateriaSource &other)
         if (other.source[i])
             source[i] = other.source[i]->clone();
         else
-            source[i] = nullptr;
+            source[i] = NULL;
     }
 }
 
@@ -55,7 +55,7 @@ MateriaSource &MateriaSource::operator=(const MateriaSource &other)
             if (other.source[i])
                 source[i] = other.source[i]->clone();
             else
-                source[i] = nullptr;
+                source[i] = NULL;
         }
     }
     return *this;
@@ -65,11 +65,10 @@ void MateriaSource::learnMateria(AMateria *m)
 {
     for (int i = 0; i < 4; ++i)
     {
-        if (!source[i])
-        {
-            source[i] = m->clone();
-            break;
-        }
+        if (source[i])
+            continue;
+        source[i] = m;
+        break ;
     }
 }
 
@@ -82,6 +81,6 @@ AMateria *MateriaSource::createMateria(std::string const &type)
             return source[i]->clone();
         }
     }
-    return nullptr;
+    return NULL;
 }
 

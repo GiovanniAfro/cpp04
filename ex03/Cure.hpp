@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
+/*   By: gcavanna <gcavanna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 17:54:36 by gcavanna          #+#    #+#             */
-/*   Updated: 2023/12/13 22:10:51 by gcavanna         ###   ########.fr       */
+/*   Updated: 2023/12/14 14:52:54 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Cure : public AMateria
     public:
         Cure();
         Cure(const Cure &other);        
-        ~Cure();
+        virtual ~Cure();
 
         Cure &operator=(const Cure &other);
 

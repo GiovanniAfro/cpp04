@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+         #
+#    By: gcavanna <gcavanna@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/01 13:50:09 by gcavanna          #+#    #+#              #
-#    Updated: 2023/12/13 18:28:46 by gcavanna         ###   ########.fr        #
+#    Updated: 2023/12/14 14:13:01 by gcavanna         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = Materia
 
 SRC = main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp
 CC = c++
-FLAGS = -Wall -Wextra -Werror -std=c++98
+FLAGS = -g -Wall -Wextra -Werror -std=c++98
 RM = rm -rf
 
 # Colors:

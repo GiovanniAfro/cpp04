@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
+/*   By: gcavanna <gcavanna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 18:29:50 by gcavanna          #+#    #+#             */
-/*   Updated: 2023/12/13 22:10:48 by gcavanna         ###   ########.fr       */
+/*   Updated: 2023/12/14 15:00:49 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main()
     src->learnMateria(new Ice());
     src->learnMateria(new Cure());
 
-    ICharacter *me = new Character("me");
+   ICharacter *me = new Character("me");
 
     AMateria *tmp;
     tmp = src->createMateria("ice");

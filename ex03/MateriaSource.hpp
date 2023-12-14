@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MateriaSource.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
+/*   By: gcavanna <gcavanna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 18:23:26 by gcavanna          #+#    #+#             */
-/*   Updated: 2023/12/13 22:10:46 by gcavanna         ###   ########.fr       */
+/*   Updated: 2023/12/14 14:52:10 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class MateriaSource : public IMateriaSource
     public:
         MateriaSource();
         MateriaSource(const MateriaSource &other);
-        ~MateriaSource();
+        virtual ~MateriaSource();
 
         MateriaSource &operator=(const MateriaSource &other);
 

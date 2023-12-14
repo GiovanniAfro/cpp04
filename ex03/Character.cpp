@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
+/*   By: gcavanna <gcavanna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 17:56:48 by gcavanna          #+#    #+#             */
-/*   Updated: 2023/12/13 22:10:54 by gcavanna         ###   ########.fr       */
+/*   Updated: 2023/12/14 14:03:20 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Character::Character(std::string const &name) : _name(name)
 {
     for (int i = 0; i < 4; ++i)
     {
-        inventory[i] = nullptr;
+        inventory[i] = NULL;
     }
 }
 
@@ -37,7 +37,7 @@ Character::Character(const Character &other) : _name(other._name)
         if (other.inventory[i])
             inventory[i] = other.inventory[i]->clone();
         else
-            inventory[i] = nullptr;
+            inventory[i] = NULL;
     }
 }
 
@@ -60,7 +60,7 @@ Character &Character::operator=(const Character &other)
             if (other.inventory[i])
                 inventory[i] = other.inventory[i]->clone();
             else
-                inventory[i] = nullptr;
+                inventory[i] = NULL;
         }
     }
     return *this;
@@ -87,7 +87,7 @@ void Character::unequip(int idx)
 {
     if (idx >= 0 && idx < 4)
     {
-        inventory[idx] = nullptr;
+        inventory[idx] = NULL;
     }
 }
 

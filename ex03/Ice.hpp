@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ice.hpp                                            :+:      :+:    :+:   */
+/*   Ice.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
+/*   By: gcavanna <gcavanna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 17:54:03 by gcavanna          #+#    #+#             */
-/*   Updated: 2023/12/13 22:10:51 by gcavanna         ###   ########.fr       */
+/*   Updated: 2023/12/14 14:53:08 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Ice : public AMateria
     public:
         Ice();
         Ice(const Ice &other);
-        ~Ice();
+         virtual ~Ice();
 
         Ice &operator=(const Ice &other);
 
